@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+	<head>
+	</head>
+	
+	<body>
+	<h1>Holaaaaaaaa </h1>
+	
+<?php
+ function iscurlinstalled() {
+  if  (in_array  ('curl', get_loaded_extensions())) {
+    return true;
+  }
+  else{
+    return false;
+  }
+ }
+ 
+ if (iscurlinstalled())
+   echo 'Curl is enabled';
+ else
+   echo 'Curl is disabled';
+?>
+
+	
+	</body>
+</html>
